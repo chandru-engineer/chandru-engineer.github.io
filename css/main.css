@@ -269,3 +269,60 @@ footer a:not(.nav-link) {
 .entry-title a {
   text-decoration: none;
 }
+
+#service-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content horizontally */
+  max-height: auto; /* Remove the maximum height for responsiveness */
+  text-align: center; /* Center the content within the container */
+}
+
+#service-icons .col-md-3 {
+  flex: 0 0 25%; /* Each icon takes 25% of the container's width */
+  text-align: center;
+  white-space: normal; /* Allow wrapping of titles if needed */
+  margin-bottom: 20px; /* Adjust the margin as per your design */
+}
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  #service-icons .col-md-3 {
+    flex: 0 0 50%; /* Each icon takes 50% of the container's width on smaller screens */
+  }
+}
+
+/* Center the last row when there are more than 4 items */
+@media (min-width: 992px) {
+  #service-icons .col-md-3:nth-child(5),
+  #service-icons .col-md-3:nth-child(6),
+  #service-icons .col-md-3:nth-child(7),
+  #service-icons .col-md-3:nth-child(8) {
+    flex: 0 0 25%; /* Each icon in the last row takes 25% of the container's width */
+  }
+  #service-icons .col-md-3:nth-child(7),
+  #service-icons .col-md-3:nth-child(8) {
+    text-align: center; /* Center the icons in the last row */
+  }
+}
+
+
+
+
+/* added */
+.hover-effect-1 {
+  transition: transform .18s ease-in-out;
+}
+
+.hover-effect-1:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.highlight-text {
+  color: white;
+  background-color: green; /* Choose your desired highlight color */
+  padding: 2px 4px; /* Add padding for spacing around the highlighted text */
+  border-radius: 8px; /* Add rounded corners for a highlight effect */
+}
