@@ -33,6 +33,10 @@ html {
   text-decoration: none;
 }
 
+cover {
+  background-color: #444;
+}
+
 @media (min-width: 48em) {
   .site-title {
     float: left;
@@ -205,6 +209,21 @@ footer a:not(.nav-link) {
   padding: 3px 11px;
   border-radius: 50%;
 }
+
+/* Define a gradient background for the buttons based on yellow */
+.btn-gradient-yellow {
+  background: linear-gradient(to right, #FFD700, #FFA500); /* Adjust these colors as needed */
+  color: black /* Set text color to white or a suitable contrasting color */
+  border: none; /* Remove the button border if needed */
+}
+
+/* Add hover effect to the buttons */
+.btn-gradient-yellow:hover {
+  background: linear-gradient(to right, #FFD700, #FFA500); /* Reverse the gradient colors on hover if desired */
+  color: black /* Set text color to white or a suitable contrasting color */
+}
+
+
 
 /* Additional utility styles */
 .container-narrow {
