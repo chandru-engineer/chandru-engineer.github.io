@@ -182,6 +182,18 @@ img.avatar {
   background: #F6E05E !important;
 }
 
+#services {
+  background: #d7dade;
+  margin-top: 20px;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+
+
 #bp_caption a {
   text-decoration: none;
 }
