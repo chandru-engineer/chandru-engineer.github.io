@@ -357,3 +357,14 @@ footer a:not(.nav-link) {
   padding: 2px 4px; /* Add padding for spacing around the highlighted text */
   border-radius: 8px; /* Add rounded corners for a highlight effect */
 }
+
+
+
+#preloader {
+  background: #000 url('images/loader.gif') no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  }
